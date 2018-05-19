@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA\Dani_I_VGA_TopModel.ncd
+OUTFILE=C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA\Dani_I_VGA_TopModel.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s200a-4vq100
+WORKINGDIR=C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA
+LICENSE=WebPack
+USER_INFO=211302490_0_0_353

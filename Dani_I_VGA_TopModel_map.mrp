@@ -1,0 +1,188 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'Dani_I_VGA_TopModel'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200a-vq100-4 -cm area -ir off -pr off
+-c 100 -o Dani_I_VGA_TopModel_map.ncd Dani_I_VGA_TopModel.ngd
+Dani_I_VGA_TopModel.pcf 
+Target Device  : xc3s200a
+Target Package : vq100
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Thu Feb 16 22:33:37 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           136 out of   3,584    3%
+  Number of 4 input LUTs:               339 out of   3,584    9%
+Logic Distribution:
+  Number of occupied Slices:            208 out of   1,792   11%
+    Number of Slices containing only related logic:     208 out of     208 100%
+    Number of Slices containing unrelated logic:          0 out of     208   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         387 out of   3,584   10%
+    Number used as logic:               331
+    Number used as a route-thru:         48
+    Number used as 16x1 RAMs:             8
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 34 out of      68   50%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of MULT18X18SIOs:                2 out of      16   12%
+
+Average Fanout of Non-Clock Nets:                3.30
+
+Peak Memory Usage:  326 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ADDR<0>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<1>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<2>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<3>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<4>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<5>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<6>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<7>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<8>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<9>                            | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<10>                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ADDR<11>                           | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CHARRAM_CE                         | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CLK                                | IBUF             | INPUT     | LVTTL                |       |          |         |              |          | 0 / 0    |                  |
+| DATA<0>                            | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DATA<1>                            | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DATA<2>                            | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DATA<3>                            | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DATA<4>                            | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DATA<5>                            | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DATA<6>                            | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DATA<7>                            | IOB              | BIDIR     | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DEBUG                              | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| DEBUG2                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| HSYNC                              | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| RAM_WR                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| RGB<0>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| RGB<1>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| RGB<2>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| RGB<3>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| RGB<4>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| RGB<5>                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| VGARAM_CE                          | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| VSYNC                              | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

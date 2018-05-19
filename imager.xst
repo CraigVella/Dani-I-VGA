@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/xst"
+elaborate
+-ifn imager.prj
+-ifmt mixed

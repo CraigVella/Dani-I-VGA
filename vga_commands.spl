@@ -1,0 +1,12 @@
+[Inputs]
+HSYNC
+PCLK
+=DATA_IN[7:0]=
+[Outputs]
+VGARAM_EN
+VGARAM_WR
+CHARRAM_EN
+CHARRAM_WR
+=ADDR[11:0]=
+=DATA_OUT[7:0]=
+[BiDir]

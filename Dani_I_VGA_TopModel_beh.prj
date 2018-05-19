@@ -1,0 +1,4 @@
+vhdl work "vga_controller.vhd"
+vhdl work "pixel_clock.vhd"
+vhdl work "imager.vhd"
+vhdl work "Dani-I-VGA-TopModel.vhd"

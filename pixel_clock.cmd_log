@@ -1,0 +1,2 @@
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/pixel_clock.vhi" -module pixel_clock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work pixel_clock.vhd 
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/pixel_clock.vhi" -module pixel_clock -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work pixel_clock.vhd 

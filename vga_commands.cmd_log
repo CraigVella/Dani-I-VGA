@@ -1,0 +1,4 @@
+vhdtdtfi -lib work vga_commands.vhd -prj Dani-I-VGA -o vga_commands.spl -module vga_commands -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a vga_commands.spl {C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_commands.sym} 
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_commands.vhi" -module vga_commands -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work vga_commands.vhd 
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_commands.vhi" -module vga_commands -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work vga_commands.vhd 

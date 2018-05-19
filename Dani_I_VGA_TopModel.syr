@@ -1,0 +1,761 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: Dani_I_VGA_TopModel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Dani_I_VGA_TopModel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Dani_I_VGA_TopModel"
+Output Format                      : NGC
+Target Device                      : xc3s200a-4-vq100
+
+---- Source Options
+Top Module Name                    : Dani_I_VGA_TopModel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/pixel_clock.vhd" in Library work.
+Architecture behavioral of Entity pixel_clock is up to date.
+Compiling vhdl file "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" in Library work.
+Entity <imager> compiled.
+Entity <imager> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_controller.vhd" in Library work.
+Architecture behavioral of Entity vga_controller is up to date.
+Compiling vhdl file "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani-I-VGA-TopModel.vhd" in Library work.
+Architecture behavioral of Entity dani_i_vga_topmodel is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Dani_I_VGA_TopModel> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <pixel_clock> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <imager> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <vga_controller> in library <work> (architecture <behavioral>) with generics.
+	h_bp = 48
+	h_fp = 16
+	h_pixels = 640
+	h_pol = '0'
+	h_pulse = 96
+	v_bp = 29
+	v_fp = 10
+	v_pixels = 480
+	v_pol = '0'
+	v_pulse = 2
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Dani_I_VGA_TopModel> in library <work> (Architecture <behavioral>).
+Entity <Dani_I_VGA_TopModel> analyzed. Unit <Dani_I_VGA_TopModel> generated.
+
+Analyzing Entity <pixel_clock> in library <work> (Architecture <behavioral>).
+Entity <pixel_clock> analyzed. Unit <pixel_clock> generated.
+
+Analyzing Entity <imager> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 116: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 19-bit wide.
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 118: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 19-bit wide.
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 120: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 19-bit wide.
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 154: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 20-bit wide.
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 156: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 20-bit wide.
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 158: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 20-bit wide.
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 286: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 19-bit wide.
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 315: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 20-bit wide.
+WARNING:Xst:1610 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 322: Width mismatch. <sResult> has a width of 12 bits but assigned expression is 20-bit wide.
+INFO:Xst:2679 - Register <VGA_EN> in unit <imager> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <imager> analyzed. Unit <imager> generated.
+
+Analyzing generic Entity <vga_controller> in library <work> (Architecture <behavioral>).
+	h_bp = 48
+	h_fp = 16
+	h_pixels = 640
+	h_pol = '0'
+	h_pulse = 96
+	v_bp = 29
+	v_fp = 10
+	v_pixels = 480
+	v_pol = '0'
+	v_pulse = 2
+Entity <vga_controller> analyzed. Unit <vga_controller> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <sIncPixel> in unit <imager> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <pixel_clock>.
+    Related source file is "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/pixel_clock.vhd".
+    Found 1-bit register for signal <pulse>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <pixel_clock> synthesized.
+
+
+Synthesizing Unit <imager>.
+    Related source file is "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd".
+WARNING:Xst:647 - Input <START_VSYNC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ROW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <COLUMN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <DEBUG2> is never assigned. Tied to value 0.
+WARNING:Xst:653 - Signal <sDisableFetch> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <RGBWhite> is used but never assigned. This sourceless signal will be automatically connected to value 111111.
+WARNING:Xst:653 - Signal <RGBBlack> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+    Found 8x8-bit single-port RAM <Mram_aCharDataBuffer> for signal <aCharDataBuffer>.
+    Found finite state machine <FSM_0> for signal <im_vgac_re_state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 30                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 13                                             |
+    | Clock              | PCLK                      (rising_edge)        |
+    | Clock enable       | im_vgac_re_state$and0000  (negative)           |
+    | Power Up State     | fetch_command                                  |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <draw_fetch_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 9                                              |
+    | Clock              | PCLK                      (rising_edge)        |
+    | Clock enable       | draw_fetch_state$not0000  (positive)           |
+    | Power Up State     | fetch_next_address                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:643 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 156: The result of a 8x12-bit multiplication is partially used. Only the 12 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" line 154: The result of a 8x12-bit multiplication is partially used. Only the 12 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit register for signal <DEBUG>.
+    Found 1-bit register for signal <RAM_WR>.
+    Found 12-bit register for signal <ADDR>.
+    Found 8-bit register for signal <DATA_OUT>.
+    Found 6-bit register for signal <RGB>.
+    Found 1-bit register for signal <CHARRAM_CE>.
+    Found 1-bit register for signal <VGARAM_CE>.
+    Found 3-bit adder for signal <ADDR$add0001> created at line 297.
+    Found 12-bit adder for signal <ADDR$share0000> created at line 223.
+    Found 9-bit up counter for signal <iAdjXPixel>.
+    Found 8-bit up counter for signal <iAdjYPixel>.
+    Found 8-bit adder for signal <iAdjYPixel$addsub0000> created at line 193.
+    Found 6-bit up counter for signal <iColumn>.
+    Found 4-bit up counter for signal <iColumnPixel>.
+    Found 8-bit register for signal <iCurrentChar>.
+    Found 4-bit adder for signal <iCurrentChar$add0000> created at line 208.
+    Found 1-bit 8-to-1 multiplexer for signal <iCurrentChar$mux0000> created at line 133.
+    Found 8-bit register for signal <iFetchedChar>.
+    Found 1-bit register for signal <im_re_state<0>>.
+    Found 3-bit adder carry out for signal <im_vgac_re_state$addsub0000> created at line 293.
+    Found 5-bit up counter for signal <iRow>.
+    Found 4-bit up counter for signal <iRowPixel>.
+    Found 3-bit register for signal <iStCharCount>.
+    Found 8-bit register for signal <iStCharLoc>.
+    Found 1-bit register for signal <sDupeRow>.
+    Found 9-bit adder for signal <sDupeRow$add0000> created at line 186.
+    Found 1-bit register for signal <sNeedToFetch>.
+    Found 12-bit register for signal <sResult>.
+    Found 4-bit adder for signal <sResult$add0003> created at line 118.
+    Found 5-bit adder for signal <sResult$add0004> created at line 154.
+    Found 6-bit adder for signal <sResult$add0005> created at line 158.
+    Found 12-bit adder for signal <sResult$add0006> created at line 286.
+    Found 12-bit adder for signal <sResult$add0007> created at line 315.
+    Found 12-bit adder for signal <sResult$add0008> created at line 322.
+    Found 12-bit adder for signal <sResult$addsub0000> created at line 158.
+    Found 12-bit adder for signal <sResult$addsub0001>.
+    Found 8x12-bit multiplier for signal <sResult$mult0002> created at line 156.
+    Found 8x12-bit multiplier for signal <sResult$mult0003> created at line 154.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   1 RAM(s).
+	inferred   6 Counter(s).
+	inferred  72 D-type flip-flop(s).
+	inferred  14 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred   1 Multiplexer(s).
+Unit <imager> synthesized.
+
+
+Synthesizing Unit <vga_controller>.
+    Related source file is "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_controller.vhd".
+    Found 1-bit register for signal <START_VSYNC>.
+    Found 32-bit register for signal <ROW>.
+    Found 1-bit register for signal <VSYNC>.
+    Found 32-bit register for signal <COLUMN>.
+    Found 1-bit register for signal <DISPLAY_EN>.
+    Found 1-bit register for signal <HSYNC>.
+    Found 10-bit comparator greatequal for signal <COLUMN$cmp_ge0000> created at line 88.
+    Found 10-bit comparator less for signal <DISPLAY_EN$cmp_lt0000> created at line 96.
+    Found 10-bit comparator less for signal <DISPLAY_EN$cmp_lt0001> created at line 96.
+    Found 10-bit up counter for signal <h_count>.
+    Found 10-bit comparator greater for signal <HSYNC$cmp_gt0000> created at line 67.
+    Found 10-bit comparator less for signal <HSYNC$cmp_lt0000> created at line 67.
+    Found 10-bit comparator greatequal for signal <ROW$cmp_ge0000> created at line 91.
+    Found 10-bit comparator greater for signal <START_VSYNC$cmp_gt0000> created at line 74.
+    Found 10-bit comparator less for signal <START_VSYNC$cmp_lt0000> created at line 74.
+    Found 10-bit up counter for signal <v_count>.
+    Found 10-bit comparator less for signal <v_count$cmp_lt0000> created at line 107.
+    Found 10-bit comparator less for signal <v_count$cmp_lt0001> created at line 103.
+    Found 1-bit register for signal <vStartTrigger>.
+    Found 10-bit comparator greatequal for signal <vStartTrigger$cmp_ge0000> created at line 74.
+    Found 10-bit comparator lessequal for signal <vStartTrigger$cmp_le0000> created at line 74.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  69 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+Unit <vga_controller> synthesized.
+
+
+Synthesizing Unit <Dani_I_VGA_TopModel>.
+    Related source file is "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani-I-VGA-TopModel.vhd".
+    Found 8-bit tristate buffer for signal <DATA>.
+    Summary:
+	inferred   8 Tristate(s).
+Unit <Dani_I_VGA_TopModel> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port RAM                               : 1
+# Multipliers                                          : 2
+ 8x12-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 14
+ 12-bit adder                                          : 6
+ 3-bit adder                                           : 1
+ 3-bit adder carry out                                 : 1
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 8
+ 10-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 23
+ 1-bit register                                        : 13
+ 12-bit register                                       : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 4
+# Comparators                                          : 12
+ 10-bit comparator greatequal                          : 3
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 6
+ 10-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+# Tristates                                            : 1
+ 8-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <I_imager/draw_fetch_state/FSM> on signal <draw_fetch_state[1:5]> with one-hot encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ fetch_next_address | 00001
+ fetch_char_byte    | 00100
+ store_next_byte    | 10000
+ store_next_index   | 00010
+ end_fetch          | 01000
+--------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <I_imager/im_vgac_re_state/FSM> on signal <im_vgac_re_state[1:12]> with one-hot encoding.
+------------------------------------------
+ State                    | Encoding
+------------------------------------------
+ nop                      | 000000000010
+ clear_command            | 000000000100
+ fetch_command            | 000000000001
+ latch_command            | 000000001000
+ latch_char_store_loc     | 000000010000
+ latch_char_data          | 000001000000
+ save_char_data           | 000100000000
+ save_char_read_data      | 001000000000
+ latch_char_read_loc      | 000000100000
+ latch_char_read_data     | 000010000000
+ save_char_data_wait      | 010000000000
+ save_char_read_data_wait | 100000000000
+------------------------------------------
+INFO:Xst:2261 - The FF/Latch <RGB_5> in Unit <I_imager> is equivalent to the following 5 FFs/Latches, which will be removed : <RGB_4> <RGB_3> <RGB_2> <RGB_1> <RGB_0> 
+WARNING:Xst:1426 - The value init of the FF/Latch DEBUG hinder the constant cleaning in the block I_imager.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <imager>.
+INFO:Xst:3231 - The small RAM <Mram_aCharDataBuffer> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <PCLK>          | rise     |
+    |     weA            | connected to signal <HSYNC>         | low      |
+    |     addrA          | connected to signal <iStCharCount>  |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <imager> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# RAMs                                                 : 1
+ 8x8-bit single-port distributed RAM                   : 1
+# Multipliers                                          : 2
+ 8x12-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 13
+ 12-bit adder                                          : 6
+ 3-bit adder                                           : 1
+ 3-bit adder carry out                                 : 1
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 7
+ 10-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 142
+ Flip-Flops                                            : 142
+# Comparators                                          : 12
+ 10-bit comparator greatequal                          : 3
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 6
+ 10-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch DEBUG hinder the constant cleaning in the block imager.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <COLUMN_10> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_11> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_12> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_13> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_14> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_15> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_16> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_17> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_18> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_19> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_20> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_21> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_22> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_23> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_24> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_25> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_26> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_27> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_28> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_29> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_30> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <COLUMN_31> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_10> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_11> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_12> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_13> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_14> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_15> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_16> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_17> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_18> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_19> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_20> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_21> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_22> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_23> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_24> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_25> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_26> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_27> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_28> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_29> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_30> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ROW_31> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <RGB_5> in Unit <imager> is equivalent to the following 5 FFs/Latches, which will be removed : <RGB_4> <RGB_3> <RGB_2> <RGB_1> <RGB_0> 
+
+Optimizing unit <Dani_I_VGA_TopModel> ...
+
+Optimizing unit <imager> ...
+
+Optimizing unit <vga_controller> ...
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_9> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_8> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_7> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_6> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_5> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_4> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_3> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_2> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_1> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/COLUMN_0> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_9> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_8> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_7> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_6> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_5> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_4> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_3> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_2> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_1> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/ROW_0> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/START_VSYNC> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+WARNING:Xst:2677 - Node <I_vga_controller/vStartTrigger> of sequential type is unconnected in block <Dani_I_VGA_TopModel>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Dani_I_VGA_TopModel, actual ratio is 12.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 136
+ Flip-Flops                                            : 136
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Dani_I_VGA_TopModel.ngr
+Top Level Output File Name         : Dani_I_VGA_TopModel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 517
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 47
+#      LUT2                        : 37
+#      LUT2_D                      : 2
+#      LUT2_L                      : 15
+#      LUT3                        : 63
+#      LUT3_D                      : 2
+#      LUT3_L                      : 6
+#      LUT4                        : 170
+#      LUT4_D                      : 12
+#      LUT4_L                      : 14
+#      MUXCY                       : 53
+#      MUXF5                       : 24
+#      MUXF6                       : 1
+#      VCC                         : 1
+#      XORCY                       : 58
+# FlipFlops/Latches                : 136
+#      FDE                         : 87
+#      FDR                         : 1
+#      FDRE                        : 48
+# RAMS                             : 8
+#      RAM16X1S                    : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IOBUF                       : 8
+#      OBUF                        : 25
+# MULTs                            : 2
+#      MULT18X18SIO                : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200avq100-4 
+
+ Number of Slices:                      202  out of   1792    11%  
+ Number of Slice Flip Flops:            136  out of   3584     3%  
+ Number of 4 input LUTs:                387  out of   3584    10%  
+    Number used as logic:               379
+    Number used as RAMs:                  8
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of     68    50%  
+ Number of MULT18X18SIOs:                 2  out of     16    12%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+I_pixel_clock/pulse1               | BUFG                   | 143   |
+CLK                                | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 11.481ns (Maximum Frequency: 87.100MHz)
+   Minimum input arrival time before clock: 9.815ns
+   Maximum output required time after clock: 6.379ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'I_pixel_clock/pulse1'
+  Clock period: 11.481ns (frequency: 87.100MHz)
+  Total number of paths / destination ports: 7903 / 324
+-------------------------------------------------------------------------
+Delay:               11.481ns (Levels of Logic = 7)
+  Source:            I_imager/iRow_0 (FF)
+  Destination:       I_imager/sResult_11 (FF)
+  Source Clock:      I_pixel_clock/pulse1 rising
+  Destination Clock: I_pixel_clock/pulse1 rising
+
+  Data Path: I_imager/iRow_0 to I_imager/sResult_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.591   0.708  I_imager/iRow_0 (I_imager/iRow_0)
+     MULT18X18SIO:A0->P10    2   4.602   0.590  I_imager/Mmult_sResult_mult0002 (I_imager/sResult_mult0002<10>)
+     LUT1:I0->O            1   0.648   0.000  I_imager/Madd_sResult_addsub0000_cy<10>_rt (I_imager/Madd_sResult_addsub0000_cy<10>_rt)
+     MUXCY:S->O            0   0.632   0.000  I_imager/Madd_sResult_addsub0000_cy<10> (I_imager/Madd_sResult_addsub0000_cy<10>)
+     XORCY:CI->O           1   0.844   0.563  I_imager/Madd_sResult_addsub0000_xor<11> (I_imager/sResult_addsub0000<11>)
+     LUT4:I0->O            1   0.648   0.000  I_imager/sResult_mux0004<11>_F (N170)
+     MUXF5:I0->O           2   0.276   0.479  I_imager/sResult_mux0004<11> (I_imager/sResult_mux0004<11>)
+     LUT3:I2->O            1   0.648   0.000  I_imager/sResult_mux0005<11> (I_imager/sResult_mux0005<11>)
+     FDE:D                     0.252          I_imager/sResult_11
+    ----------------------------------------
+    Total                     11.481ns (9.141ns logic, 2.340ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 1.907ns (frequency: 524.384MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.907ns (Levels of Logic = 0)
+  Source:            I_pixel_clock/pulse (FF)
+  Destination:       I_pixel_clock/pulse (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: I_pixel_clock/pulse to I_pixel_clock/pulse
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  I_pixel_clock/pulse (I_pixel_clock/pulse1)
+     FDR:R                     0.869          I_pixel_clock/pulse
+    ----------------------------------------
+    Total                      1.907ns (1.460ns logic, 0.447ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'I_pixel_clock/pulse1'
+  Total number of paths / destination ports: 252 / 60
+-------------------------------------------------------------------------
+Offset:              9.815ns (Levels of Logic = 8)
+  Source:            DATA<4> (PAD)
+  Destination:       I_imager/ADDR_2 (FF)
+  Destination Clock: I_pixel_clock/pulse1 rising
+
+  Data Path: DATA<4> to I_imager/ADDR_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           8   0.849   0.900  DATA_4_IOBUF (N79)
+     LUT3:I0->O            1   0.648   0.423  I_imager/im_vgac_re_state_cmp_eq00001_SW0 (N32)
+     LUT4:I3->O            5   0.648   0.776  I_imager/im_vgac_re_state_cmp_eq00001 (I_imager/RAM_WR_and0000)
+     LUT3:I0->O            3   0.648   0.611  I_imager/ADDR_or00041 (I_imager/ADDR_or0004)
+     LUT3:I1->O            2   0.643   0.590  I_imager/ADDR_mux0000<5>1111 (I_imager/N71)
+     LUT4_D:I0->O          5   0.648   0.713  I_imager/ADDR_mux0000<0>1 (I_imager/N4)
+     LUT2_L:I1->LO         1   0.643   0.180  I_imager/ADDR_mux0000<2>42 (I_imager/ADDR_mux0000<2>42)
+     LUT4:I1->O            1   0.643   0.000  I_imager/ADDR_mux0000<2>59 (I_imager/ADDR_mux0000<2>)
+     FDE:D                     0.252          I_imager/ADDR_2
+    ----------------------------------------
+    Total                      9.815ns (5.622ns logic, 4.193ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'I_pixel_clock/pulse1'
+  Total number of paths / destination ports: 40 / 32
+-------------------------------------------------------------------------
+Offset:              6.379ns (Levels of Logic = 1)
+  Source:            I_vga_controller/HSYNC (FF)
+  Destination:       HSYNC (PAD)
+  Source Clock:      I_pixel_clock/pulse1 rising
+
+  Data Path: I_vga_controller/HSYNC to HSYNC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             51   0.591   1.268  I_vga_controller/HSYNC (I_vga_controller/HSYNC)
+     OBUF:I->O                 4.520          HSYNC_OBUF (HSYNC)
+    ----------------------------------------
+    Total                      6.379ns (5.111ns logic, 1.268ns route)
+                                       (80.1% logic, 19.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.69 secs
+ 
+--> 
+
+Total memory usage is 322420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   86 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

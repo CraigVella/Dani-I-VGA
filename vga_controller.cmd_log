@@ -1,0 +1,3 @@
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_controller.vhi" -module vga_controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work vga_controller.vhd 
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_controller.vhi" -module vga_controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work vga_controller.vhd 
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_controller.vhi" -module vga_controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work vga_controller.vhd 

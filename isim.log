@@ -1,0 +1,381 @@
+ISim log file
+Running: C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA\Dani_I_VGA_TopModel_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani_I_VGA_TopModel_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /dani_i_vga_topmodel/clk 1 -radix bin -value 0 -radix bin -time 10 ns -repeat 20 ns
+# run 60000.00us
+Stopped at time : 1120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 1160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+at 1160 ns(3), Instance /dani_i_vga_topmodel/I_imager/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Stopped at time : 1760 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 1800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 2400 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 2440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 3040 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 3080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 3680 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 3720 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 4320 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 4360 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 4960 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 5 us : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 5600 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 5640 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 6240 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 6280 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 6880 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 6920 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 7520 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 7560 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 8160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 8200 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 8800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 8840 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 9440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 9480 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 10080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 10120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 10720 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 10760 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 11360 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 11400 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 12 us : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 12040 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 12640 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 12680 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 13280 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 13320 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 13920 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 13960 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 14560 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 14600 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 15200 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 15240 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 15840 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 15880 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 16480 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 16520 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 17120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 17160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 17760 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 17800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 18400 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 18440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 19040 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 19080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 19680 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 19720 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 20320 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 20360 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 20960 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 21 us : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 21600 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 21640 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 22240 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 22280 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 22880 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 22920 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 23520 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 23560 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 24160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 24200 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 24800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 24840 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 25440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 25480 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 26080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 26120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 33120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 33160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 33760 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 33800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 34400 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 34440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 35040 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 35080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 35680 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 35720 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 36320 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 36360 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 36960 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 37 us : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 37600 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 37640 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 38240 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 38280 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 38880 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 38920 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 39520 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 39560 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 40160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 40200 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 40800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 40840 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 41440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 41480 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 42080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 42120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 42720 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 42760 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 43360 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 43400 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 44 us : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 44040 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 44640 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 44680 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 45280 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 45320 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 45920 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 45960 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 46560 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 46600 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 47200 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 47240 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 47840 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 47880 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 48480 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 48520 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 49120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 49160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 49760 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 49800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 50400 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 50440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 51040 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 51080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 51680 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 51720 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 52320 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 52360 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 52960 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 53 us : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 53600 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 53640 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 54240 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 54280 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 54880 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 54920 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 55520 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 55560 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 56160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 56200 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 56800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 56840 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 57440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 57480 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 58080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 58120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 65120 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 65160 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 65760 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 65800 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 66400 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 66440 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 67040 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 67080 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 67680 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 67720 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 68320 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 68360 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 68960 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 69 us : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 69600 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 69640 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 70240 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 70280 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 70880 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 70920 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 71520 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 167
+# run 60000.00us
+Stopped at time : 71560 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 115
+# run 60000.00us
+Stopped at time : 71560 ns : File "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" Line 118

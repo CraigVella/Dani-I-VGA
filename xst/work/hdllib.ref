@@ -1,0 +1,12 @@
+AR pixel_clock behavioral "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/pixel_clock.vhd" sub00/vhpl02 1487302399
+EN test_image NULL "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Test_Image.vhd" sub00/vhpl06 1486091383
+EN imager NULL "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" sub00/vhpl08 1487302400
+AR vga_controller behavioral "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_controller.vhd" sub00/vhpl04 1487302403
+AR vga_commands behavioral "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_commands.vhd" sub00/vhpl11 1486398586
+EN vga_commands NULL "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_commands.vhd" sub00/vhpl10 1486398585
+AR dani_i_vga_topmodel behavioral "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani-I-VGA-TopModel.vhd" sub00/vhpl05 1487302405
+EN dani_i_vga_topmodel NULL "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani-I-VGA-TopModel.vhd" sub00/vhpl00 1487302404
+EN vga_controller NULL "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/vga_controller.vhd" sub00/vhpl03 1487302402
+EN pixel_clock NULL "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/pixel_clock.vhd" sub00/vhpl01 1487302398
+AR imager behavioral "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhd" sub00/vhpl09 1487302401
+AR test_image behavioral "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Test_Image.vhd" sub00/vhpl07 1486091384

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani_I_VGA_TopModel_isim_beh.exe" -prj "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani_I_VGA_TopModel_beh.prj" "work.Dani_I_VGA_TopModel" 

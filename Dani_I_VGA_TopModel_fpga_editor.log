@@ -1,0 +1,43 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA
+#Date/Time:
+#:T   Mon Oct 09 12:49:43 2017
+#------------------------------
+	#Reading Dani_I_VGA_TopModel.ncd...
+	#Loading device for application Rf_Device from file '3s200a.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "Dani_I_VGA_TopModel" is an NCD, version 3.2, device xc3s200a, package vq100, speed -4
+	#Design creation date: 2017.02.17.03.33.39
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select comp 'N94'
+	#comp "N94",  site "SLICE_X15Y39",  type = SLICEL  (RPM grid X51Y41)
+	#4
+unselect -all
+	#5
+select comp 'N94'
+	#comp "N94",  site "SLICE_X15Y39",  type = SLICEL  (RPM grid X51Y41)
+	#6
+post block
+	#<G>=(A1*(A2*(A4*A3))); bel <I_imager/iRowPixel_and00001>.
+	#<G>=(A1*(A2*(A4*A3))); bel <I_imager/iRowPixel_and00001>.
+	#7
+unselect -all
+	#8
+select comp 'CHARRAM_CE'
+	#comp "CHARRAM_CE",  site "P89",  bonded type = IOB,  pad name = PAD29,  pin name = P89  (RPM grid X51Y67)
+	#9
+unselect -all
+	#10
+select comp 'CHARRAM_CE'
+	#comp "CHARRAM_CE",  site "P89",  bonded type = IOB,  pad name = PAD29,  pin name = P89  (RPM grid X51Y67)
+	#11
+post block

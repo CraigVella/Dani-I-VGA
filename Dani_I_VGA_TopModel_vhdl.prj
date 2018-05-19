@@ -1,0 +1,4 @@
+vhdl work "C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA\vga_controller.vhd"
+vhdl work "C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA\pixel_clock.vhd"
+vhdl work "C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA\imager.vhd"
+vhdl work "C:\Users\Craig Vella\Documents\ISEProjects\Dani-I-VGA\Dani-I-VGA-TopModel.vhd"

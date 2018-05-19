@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani.xst" -ofn "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani.syr" 
+xst -intstyle ise -ifn "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani.xst" -ofn "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/Dani.syr" 

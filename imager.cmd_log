@@ -1,0 +1,3 @@
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhi" -module imager -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work imager.vhd 
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhi" -module imager -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work imager.vhd 
+vhdtdtfi -prj Dani-I-VGA -o "C:/Users/Craig Vella/Documents/ISEProjects/Dani-I-VGA/imager.vhi" -module imager -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work imager.vhd 

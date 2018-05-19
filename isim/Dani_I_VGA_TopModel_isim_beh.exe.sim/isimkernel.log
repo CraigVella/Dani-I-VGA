@@ -1,0 +1,29 @@
+Command line:
+   Dani_I_VGA_TopModel_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50483
+
+Sun Feb 12 08:11:50 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 841.806 Meg
+
+ Total Signals          : 61
+ Total Nets             : 161
+ Total Signal Drivers   : 32
+ Total Blocks           : 8
+ Total Primitive Blocks : 7
+ Total Processes        : 15
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 674
+Total Line Count : 194
+
+ Total Simulation Time: 2.70313 sec
+
+ Current Memory Usage: 684.519 Meg
+
+Sun Feb 12 08:22:57 2017
+
